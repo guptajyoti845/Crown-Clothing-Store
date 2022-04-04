@@ -11,7 +11,6 @@ const Authentication = () => {
         if (response) {
             const userDocRef = await createUserDocumentFromAuth(response.user)
         }
-        console.log("response", response)
     }, [])
     const logGoogleRedirectUser = async () => {
         const {user} = await signInWithGoogleRedirect();
